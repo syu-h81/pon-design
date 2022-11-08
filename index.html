@@ -7,8 +7,14 @@
   <title>PON DESIGN</title>
   <!-- cssファイルの出力 -->
   <link rel="stylesheet" href="assets/css/destyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="assets/css/st.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/top.css">
+  <!-- google fonts 読み込み-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
   <!-- jquery読み込み -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
@@ -34,17 +40,22 @@
             </ul>
           </nav>
         </div>
+        <div id="toggle" class="sp-Menu_toggle">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
       </div>
     </header>
 
     <div class="top-Hero_block">
       <div class="top-Hero_container container">
-        <div class="hero-Heding">
+        <div class="hero-Heading">
           <div class="hero-Title">
             WEB DESIGN SPECIALIST
           </div>
           <div class="hero-Subtitle">
-            お客様の夢を叶えるWebサイトを制作
+            お客様の夢を叶える<br class="sp-Line">Webサイトを制作
           </div>
         </div>
         <div class="hero-Contact_btn contact-Btn">
@@ -62,25 +73,31 @@
           </div>
           <div class="news-Contents_area">
             <div class="news-Content">
-              <time class="news-Time">2030.02.01</time>
-              <div class="news-Label">お知らせ</div>
+              <div class="news-Content_list">
+                <time class="news-Time">2030.02.01</time>
+                <div class="news-Label">お知らせ</div>
+              </div>
               <div class="news-Text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</div>
             </div>
             <div class="news-Content">
-              <time class="news-Time">2030.01.25</time>
-              <div class="news-Label">制作実績</div>
+              <div class="news-Content_list">
+                <time class="news-Time">2030.01.25</time>
+                <div class="news-Label">制作実績</div>
+              </div>
               <div class="news-Text">Smoothiesta様のWebサイトを制作いたしました</div>
             </div>
             <div class="news-Content">
-              <time class="news-Time">2030.01.20</time>
-              <div class="news-Label">採用</div>
+              <div class="news-Content_list">
+                <time class="news-Time">2030.01.20</time>
+                <div class="news-Label">採用</div>
+              </div>
               <div class="news-Text">Webデザイナーを1名募集中です!</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="sevice-Block">
+      <section class="service-Block">
         <div class="service-Container container">
           <div class="service-Heading">
             <h2 class="service-Title st-Title">SERVICE</h2>
@@ -103,7 +120,7 @@
             </div>
           </div>
           <div class="service-Link_area st-Link_btn">
-            <a class="service-Link" href="">More</a>
+            <a class="service-Link" href="service.html">More</a>
           </div>
         </div>
       </section>
@@ -112,7 +129,7 @@
         <div class="works-Container container">
           <div class="works-Inner">
             <div class="works-Img_area">
-              <div class="swiper-container js-swiper-container">
+              <div class="swiper js-swiper-container">
                 <div class="swiper-wrapper">
                   <img class="swiper-slide" src="assets/images/works_smoothiesta.png" alt="">
                   <img class="swiper-slide" src="assets/images/works_web_conference.png" alt="">
@@ -123,13 +140,13 @@
                 <div class="swiper-button-next"></div>
               </div>       
             </div>
-            <div class="works-text_area">
+            <div class="works-Text_area">
               <div class="works-Heading">
                 <h2 class="works-Title st-Title">WORKS</h2>
               </div>
-              <p class="works-text">様々なジャンルのWebサイト制作が可能です。ご購入やお申込み数の増加などを実現します!</p>
+              <p class="works-text">様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します!</p>
               <div class="works-Link_area st-Link_btn">
-                <a class="works-Link" href="">More</a>
+                <a class="works-Link" href="works.html">More</a>
               </div>
             </div>
           </div>
@@ -141,16 +158,19 @@
           <div class="company-Heading">
             <h2 class="company-Title st-Title">COMPANY</h2>
           </div>
+          <div class="company-Message">
+            <span class="company-Message_text">サイトのゴール =<br class="sp-Line"> 夢を叶えること</span>
+          </div>
           <div class="company-Text_area">
-            <p class="company-Text">お客様の夢を叶えること。
-              それがWebサイトのゴールであり、私たちが目指すことです。
-              だからこそちゃんと成果を出すサイトを全力でお作りします。
-              お客様の笑顔を見たい。
+            <p class="company-Text">お客様の夢を叶えること。<br>
+              それがWebサイトのゴールであり、<br class="sp-Line">私たちが目指すことです。<br>
+              だからこそちゃんと成果を出すサイトを<br class="sp-Line">全力でお作りします。<br>
+              お客様の笑顔を見たい。<br>
               夢を実現する手助けをさせてください。
             </p>
           </div>
           <div class="company-Link_area st-Link_btn">
-            <a class="company-Link" href="">More</a>
+            <a class="company-Link" href="company.html">More</a>
           </div>
         </div>
       </section>
@@ -162,9 +182,9 @@
               <div class="recruit-Heading">
                 <h2 class="recruit-Title st-Title">RECRUIT</h2>
                 <p class="recruit-Text">私たちと一緒に働きませんか？</p>
-              </div>
-              <div class="recruit-Link_area st-Link_btn">
-                <a class="recruit-Link" href="">More</a>
+                <div class="recruit-Link_area st-Link_btn">
+                  <a class="recruit-Link" href="recruit.html">More</a>
+                </div>
               </div>
             </div>
             <div class="recruit-Img_area">
@@ -178,10 +198,10 @@
         <div class="contact-Container container">
           <div class="contact-Heading">
             <h2 class="contact-Title st-Title">CONTACT</h2>
-            <p class="contact-Text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+            <p class="contact-Text">Webサイトの制作のご依頼やお見積りなど、<br class="sp-Line">お気軽にご相談ください。</p>
           </div>
           <div class="contact-Link_area st-Link_btn">
-            <a class="contact-Link" href="">More</a>
+            <a class="contact-Link" href="contact.html">More</a>
           </div>
         </div>
       </section>
@@ -191,6 +211,7 @@
       <div class="footer-Container container">
         <nav class="footer-Nav">
           <ul class="footer-Nav_list">
+            <li class="footer-Nav_item"><a href="news.html" class="footer-Nav_link">HOME</a></li>
             <li class="footer-Nav_item"><a href="news.html" class="footer-Nav_link">NEWS</a></li>
             <li class="footer-Nav_item"><a href="service.html" class="footer-Nav_link">SERVICE</a></li>
             <li class="footer-Nav_item"><a href="works.html" class="footer-Nav_link">WORKS</a></li>
@@ -203,6 +224,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </div>
 </body>

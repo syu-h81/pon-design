@@ -1,1 +1,49 @@
-/*# sourceMappingURL=st.css.map */
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.st-Title {
+  color: #391E88;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+@media (max-width: 760px) {
+  .st-Title {
+    font-size: 30px;
+  }
+}
+
+.st-Link_btn {
+  background-image: linear-gradient(to right, #7633a4 0%, #250d65 51%, #7633a4 100%);
+  background-size: 200% auto;
+  max-width: 200px;
+  border-radius: 40px;
+  padding: 20px 40px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sp-Line {
+  display: none;
+}
+@media (max-width: 760px) {
+  .sp-Line {
+    display: block;
+  }
+}/*# sourceMappingURL=st.css.map */
