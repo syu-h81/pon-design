@@ -21,7 +21,7 @@ let mySwiper = new Swiper ('.swiper', {
 //スクロール時のヘッダー固定
 $(function() {
   $(window).on('scroll', function() {
-    if($('.top-Hero_block').height()<$(this).scrollTop()) {
+    if($('#header-Fix').height()<$(this).scrollTop()) {
       $('.header').addClass('header-Active');
     }
     else {

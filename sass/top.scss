@@ -399,34 +399,4 @@
       }
     }
   }
-
-  .contact-Block {
-    background: #F7F7F7;
-    padding: 70px 0;
-    margin: 0 auto;
-    .contact-Container {
-      .contact-Heading {
-        .contact-Title {
-          &::after {
-            content: "お問い合わせ";
-            font-size: 13px;
-            font-weight: normal;
-            display: block;
-            padding-top: 8px;
-          }
-        }
-        .contact-Text {
-          font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-          line-height: 1.8;
-          color: #333;
-          letter-spacing: 0.05em;
-          font-size: 0.9375rem;
-          padding: 40px 0;
-          @media(max-width: 760px) {
-            padding: 30px 0;
-          }
-        }
-      }
-    }
-  }
 }

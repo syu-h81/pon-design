@@ -14,6 +14,12 @@ body {
 }
 
 .st-Title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.st-Sec_title {
   color: #391E88;
   font-family: 'Montserrat', sans-serif;
   font-size: 36px;
@@ -41,5 +47,75 @@ a {
   display: none;
   @media(max-width: 760px) {
     display: block;
+  }
+}
+
+.st-News_inner {
+  @media(max-width: 760px) {
+    margin-top: 30px;
+  }
+  .st-News_list {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    @media(max-width: 760px) {
+      display: block;
+      padding-bottom: 40px;
+    }
+    .st-News_item {
+      display: flex;
+      .st-News_time {
+        font-size: 15px;
+      }
+      .st-News_label {
+        background: #E8E8E8;
+        padding: 2px 10px;
+        border-radius: 20px;
+        margin: 0 12px;
+        width: 80px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        @media(max-width: 760px) {
+          font-weight: normal;
+          font-size: 11px;
+        }
+      }
+    }
+    .st-News_text {
+      @media(max-width: 760px) {
+        text-align: justify;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.st-Contact_block {
+  background: #F7F7F7;
+  padding: 70px 0;
+  margin: 0 auto;
+  .st-Contact_container {
+    .st-Contact_heading {
+      .st-Contact_title {
+        &::after {
+          content: "お問い合わせ";
+          font-size: 13px;
+          font-weight: normal;
+          display: block;
+          padding-top: 8px;
+        }
+      }
+      .st-Contact_text {
+        font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        letter-spacing: 0.05em;
+        font-size: 0.9375rem;
+        padding: 40px 0;
+        @media(max-width: 760px) {
+          padding: 30px 0;
+        }
+      }
+    }
   }
 }
